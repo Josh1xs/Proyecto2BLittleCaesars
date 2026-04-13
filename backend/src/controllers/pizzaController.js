@@ -29,7 +29,7 @@ pizzasController.insertPizza = async (req, res) => {
 //ELIMINAR
 pizzasController.deletePizzas = async (req, res) => {
   await pizzasModel.findByIdAndDelete(req.params.id);
-  res.json({ message: "pizza deleted" });
+  res.json({ message: "pizzas deleted" });
 };
 
 //UPDATE
